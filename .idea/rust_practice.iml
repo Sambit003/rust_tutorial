@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="EMPTY_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/concurrent_mandelbrot/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/fundamental_data_types/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ownership/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/quickreplace/src" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/concurrent_mandelbrot/target" />
+      <excludeFolder url="file://$MODULE_DIR$/fundamental_data_types/target" />
+      <excludeFolder url="file://$MODULE_DIR$/ownership/target" />
+      <excludeFolder url="file://$MODULE_DIR$/quickreplace/target" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
