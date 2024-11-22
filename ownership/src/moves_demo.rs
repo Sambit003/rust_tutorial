@@ -113,3 +113,34 @@ pub(crate) fn copy_demo(){
                  &string.len() as *const _ as usize, string.len());
     }
 }
+
+fn some_condition() -> bool {
+    false
+}
+
+fn consume_vector(v: Vec<i32>) {
+    println!("Consumed vector: {:?}", v);
+}
+
+fn use_vector(v: Vec<i32>) {
+    println!("Using vector: {:?}", v);
+}
+
+pub(crate) fn moves_and_control_flow_demo() {
+    let x = vec![10, 20, 30];
+    if some_condition() {
+        consume_vector(x); // x is moved here
+    } else {
+        use_vector(x); // x is moved here
+    }
+
+    // Case 1: Uncommenting this block will cause a compile-time error
+    /* while some_condition() {
+        consume_vector(x); // x is moved here
+    } */  // This block is also a bad idea because x is moved here for first iteration and in second iteration, it's just a void space
+
+    // Case 3:
+    // x is uninitialized here because it has been moved in both branches of if-else
+    //use_vector(x); // Uncommenting this line will cause a compile-time error
+    // to use the variable x again, you need to either clone it or reassign it with direct value assignment or thtough any user defined funtion.
+}

@@ -14,7 +14,8 @@ fn main() {
         println!("3. Struct Ownership Demo");
         println!("4. Moves Demo");
         println!("5. Copy Demo");
-        println!("6. Exit");
+        println!("6. Moves and Control Flow Demo");
+        println!("7. Exit");
 
         print!("Enter your choice: ");
         io::stdout().flush().unwrap();
@@ -51,6 +52,11 @@ fn main() {
                 println!("--------END OF COPY DEMO--------");
             }
             6 => {
+                println!("--------STARTING OF MOVES CONTROL FLOW DEMO--------");
+                moves_demo::moves_and_control_flow_demo();
+                println!("--------END OF MOVES CONTROL FLOW DEMO--------");
+            }
+            7 => {
                 println!("Exiting...");
                 break;
             }
